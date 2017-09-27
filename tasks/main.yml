@@ -1,0 +1,8 @@
+---
+ - debug:
+     msg: Installing {{ package.name }} on Machine.
+
+ - name: Installing {{ package.name }}
+   apt:
+     name: {{ package.name }}
+     state: present
